@@ -195,10 +195,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         //Yajra\Datatables\DatatablesServiceProvider::class,
         // Spatie\Permission\PermissionServiceProvider::class,
-        Milon\Barcode\BarcodeServiceProvider::class,
         ConsoleTVs\Charts\ChartsServiceProvider::class,
-        Nwidart\Menus\MenusServiceProvider::class,
-        Knox\Pesapal\PesapalServiceProvider::class,
     ],
 
     /*
@@ -215,14 +212,10 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         'Carbon' => 'Carbon\Carbon',
         'Charts' => ConsoleTVs\Charts\Facades\Charts::class,
-        'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
-        'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
         'Datatables' => Yajra\DataTables\Facades\DataTables::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
         'Paystack' => Unicodeveloper\Paystack\Facades\Paystack::class,
         'Redis' => Illuminate\Support\Facades\Redis::class,
-        'Menu' => Nwidart\Menus\Facades\Menu::class,
-        'Pesapal' => Knox\Pesapal\Facades\Pesapal::class,
     ])->toArray(),
 ];

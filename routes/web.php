@@ -61,6 +61,17 @@ use App\Http\Controllers\VariationTemplateController;
 use App\Http\Controllers\WarrantyController;
 use Illuminate\Support\Facades\Route;
 
+use Illuminate\Support\Facades\Auth;
+
+Route::get('/', function () {
+    if (Auth::check()) {
+        return redirect('/home'); // หรือ /dashboard ตามที่ระบบใช้
+    } else {
+        return redirect('/login');
+    }
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -75,9 +86,9 @@ use Illuminate\Support\Facades\Route;
 include_once 'install_r.php';
 
 Route::middleware(['setData'])->group(function () {
-    Route::get('/', function () {
+    /*Route::get('/', function () {
         return view('welcome');
-    });
+    });*/
 
     Auth::routes();
 

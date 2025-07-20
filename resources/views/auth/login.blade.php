@@ -212,6 +212,14 @@
                             @endif
                         @endif
                     </div>
+                    <div class="tw-flex tw-flex-col tw-pt-3">
+                            <label>owner role</label>
+                            <p>UserDemo : <b>admin</b> | Password : <b>demo1234</b></p>
+                            <label>Stock Management role</label>
+                            <p>UserDemo : <b>stockadmin</b> | Password : <b>demo1234</b></p>
+                            <label>Sale Management role</label>
+                            <p>UserDemo : <b>saleadmin</b> | Password : <b>demo1234</b></p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -60,13 +60,13 @@
             </div>
         </div>
         <div class="clearfix"></div>
-        <div class="col-sm-4">
+        <!--<div class="col-sm-4">
             <div class="form-group">
                 {!! Form::label('business_logo', __('business.upload_logo') . ':') !!}
                     {!! Form::file('business_logo', ['accept' => 'image/*']); !!}
                     <p class="help-block"><i> @lang('business.logo_help')</i></p>
             </div>
-        </div>
+        </div>-->
         <div class="col-md-4">
             <div class="form-group">
                 {!! Form::label('fy_start_month', __('business.fy_start_month') . ':') !!} @show_tooltip(__('tooltip.fy_start_month'))

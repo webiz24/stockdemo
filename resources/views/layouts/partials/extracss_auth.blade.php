@@ -4,7 +4,7 @@
     <![endif]-->
     <style>
         body {
-            background-color: #243949;
+            background-color: #FFFFFF;
         }
 
         h1 {
@@ -79,7 +79,8 @@
     </style>
     <style>
         body {
-            background: linear-gradient(to right, #6366f1, #3b82f6);
+            background: #FFFFFF;
+            height: 100%;
         }
 
         h1 {

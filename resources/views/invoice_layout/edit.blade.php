@@ -1094,8 +1094,6 @@
 @if(!empty($enabled_modules) && in_array('types_of_service', $enabled_modules) )
     @include('types_of_service.invoice_layout_settings', ['module_info' => $invoice_layout->module_info])
 @endif
-<!-- Call restaurant module if defined -->
-@include('restaurant.partials.invoice_layout', ['module_info' => $invoice_layout->module_info, 'edit_il' => true])
 
 @if(Module::has('Repair'))
   @include('repair::layouts.partials.invoice_layout_settings', ['module_info' => $invoice_layout->module_info, 'edit_il' => true])

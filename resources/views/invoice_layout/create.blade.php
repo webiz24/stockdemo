@@ -1096,12 +1096,11 @@
     @include('types_of_service.invoice_layout_settings')
   @endif
   
-  <!-- Call restaurant module if defined -->
-  @include('restaurant.partials.invoice_layout')
 
   @if(Module::has('Repair'))
     @include('repair::layouts.partials.invoice_layout_settings')
   @endif
+
   <div class="box box-solid">
     <div class="box-header with-border">
       <h3 class="box-title">@lang('lang_v1.layout_credit_note')</h3>
